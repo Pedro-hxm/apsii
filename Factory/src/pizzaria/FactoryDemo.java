@@ -2,11 +2,11 @@ package pizzaria;
 
 public class FactoryDemo {
     public static void main(String[] args) {
-        PizzaStore chicagoStore = new ChicagoPizzaStore();
+        PizzaStore nyStore = new NYStylePizzaStore();
 
-        chicagoStore.orderPizza("cheese");
-        System.out.println();
-
-        chicagoStore.orderPizza("clam");
+        nyStore.orderPizza("cheese");
+        nyStore.orderPizza("veggie");
+        nyStore.orderPizza("clam");
+        nyStore.orderPizza("pepperoni");
     }
 }
